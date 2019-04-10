@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Space X</title>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  <style>
+    #homeBanner {
+      width: 100%;
+    }
+    
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner {
+      display: block;
+      width: 100%;
+    }
+    
+    #qrcode {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #map2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 320px;
+      height: 320px;
+    }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div id="homeScreen" data-role="page">
+    <div class="app">
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                <p class="battery-status">LOOK</p>
+                <p id="battery-level" class="ready-show"></p>
+            </div>
+        </div>
+    <img src="imgs/spaceX.jpg" class="banner" />
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+        <li><a href="#currentExhibits">Rockets</a></li>
+        <li><a href="#pastExhibits">Space</a></li>
+        <li><a href="">Calendar of Events</a></li>
+        <li><a href="#discoverScreen">[ Discover ]</a></li>
+        <li><a href="#Tesla">Telsa</a></li>
+        <li><a href="#ElonMusk">Elon Musk</a></li>
+
+        <p id="battery-level"></p>
+
+      </ul>
+      <div class="ui-grid-a center">
+        <div class="ui-block-a">
+          <a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+        </div>
+        <div class="ui-block-b">
+          <a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="currentExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Space X</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Current Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/f9.jpg">
+            <h2>Falcon 9</h2>
+            <p>Launch</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/fh.jpg">
+            <h2>Falcon Heavy</h2>
+            <p>Launch</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/fa.png">
+            <h2>Additional Rockets</h2>
+            <p>Other Launches</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="pastExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Past Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/GroundSwell_thumb.png">
+            <h2>Groundswell: Design Series II</h2>
+            <p> </p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Buildings_thumb.png">
+            <h2>Reflections on Architecture: Imagining Buildings</h2>
+            <p> </p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="mapScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">Falcon 9 Launch Site</h2>
+      <p class="center">1NASA’s Kennedy Space Center in Florida
+        <br>(800)555-555</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8964444299295!2d-80.65116948510044!3d28.572872182441525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e74b95a365c6fd%3A0x8b7339f246f869dd!2sKennedy+Space+Center!5e0!3m2!1sen!2sus!4v1554252229085!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="ElonMusk" data-role="page">
+      <header data-role="header" data-position="fixed" data-id="appHeader">
+        <h1>Elon Musk</h1>
+        <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+      </header>
+      <div data-role="content">
+        <img src="imgs/elon.jpg" alt="Elon Musk">
+      </div>
+    </div>
+
+  <div id="Tesla" data-role="page">
+      <header data-role="header" data-position="fixed" data-id="appHeader">
+        <h1>Tesla</h1>
+        <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+      </header>
+      <div data-role="content">
+        <h1 class="center">Our Cars</h1>
+        <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+          <li>
+            <a href="#"><img src="imgs/mx.jpg">
+              <h2>Model X</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="imgs/ms.jpg">
+              <h2>Model S</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="imgs/m3.jpg">
+              <h2>Model 3</h2>
+            </a>
+          </li>
+          <li>
+              <a href="#"><img src="imgs/my.jpg">
+                <h2>Model Y</h2>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+  <div id="discoverScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <img id="qrcode" src="imgs/qr.png" />
+      <h3 class="center">Discover More Exciting Stories</h3>
+      <p class="center">Any time you see this QR code, scan it using the Discover button to see additional content from SAMOCA.</p>
+      <a id="qrScanBtn" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search">Discover</a>
+    </div>
+  </div>
+
+  <div id="aboutScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">Falcon 9 Launch</h2>
+      <img class="center banner" src="imgs/falcon9.jpg" />
+
+      <p>SpaceX rolled the first Crew Dragon spacecraft out to a Florida launch pad Thursday for final preparations ahead of a test flight to the International Space Station.
+
+          The commercial crew capsule will ride a 215-foot-tall (65-meter) Falcon 9 rocket into orbit from NASA’s Kennedy Space Center in Florida at 2:49 a.m. EST (0749 GMT) Saturday, heading for a docking with the space station early Sunday, assuming an on-time liftoff.
+          
+          Rollout began before 10 a.m. EST (1500 GMT), when the Falcon 9 emerged on its strongback carrier from SpaceX’s hangar for the quarter-mile journey up the ramp to pad 39A. Around 6 p.m. EST (2300 GMT), hydraulics hoisted the rocket vertical.
+          
+          </p>
+    </div>
+  </div>
+  <!--
+	Admission
+	Directions
+	Parking
+	Hours
+	Volunteer
+	-->
+  <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+  </script>
+</body>
+
+</html>
